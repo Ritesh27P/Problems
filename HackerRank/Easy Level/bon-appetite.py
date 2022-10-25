@@ -1,19 +1,8 @@
-#!/bin/python3
-
 import math
 import os
 import random
 import re
 import sys
-
-#
-# Complete the 'bonAppetit' function below.
-#
-# The function accepts following parameters:
-#  1. INTEGER_ARRAY bill
-#  2. INTEGER k : anna doesn't eat
-#  3. INTEGER b : anna contributed
-#
 
 def bonAppetit(bill, k, b):
     bill.pop(k)
