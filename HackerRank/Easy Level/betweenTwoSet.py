@@ -36,16 +36,28 @@ def intersectionSet(a, b):
     
 #     return fset
 
-def getTotalX(a, b):
-    fset = set()
+# def getTotalX(a, b):
+#     fset = set()
 
-    for i in range(1, len(b)):
-        set1 = intersectionSet(b[i-1], b[i])
-        fset.update(set1)
-    return len(fset);
+#     for i in range(1, len(b)):
+#         set1 = intersectionSet(b[i-1], b[i])
+#         fset.update(set1)
+#     return len(fset);
 
 
-print(getTotalX([3, 4], [24, 48]))
-print()
+# print(getTotalX([3, 4], [24, 48]))
+# print()
 
-print(getTotalX([2, 6], [24, 36]))
+# print(getTotalX([2, 6], [24, 36]))
+
+def factors(a):
+    set1 = set()
+    for i in range(a):
+        for j in range(10):
+            if (i * j) == a:
+                set1.add(i)
+
+    return set1
+
+print(factors(2))
+print(factors(4), factors(16), factors(32), factors(96))
