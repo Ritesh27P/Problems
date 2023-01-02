@@ -14,3 +14,14 @@ def jumpingOnClouds(c):
         energy += 1
     
     return energy
+
+def jumpingOnClouds(c):
+    pointer = 0
+    energy = 0
+
+    while True:
+        if pointer+1 == len(c):
+            return energy +1
+        if pointer+2 == len(c):
+            if c[pointer+1] == 1:
+                return energy +1
