@@ -33,8 +33,11 @@ def strange_grid(r, c):
     else:
         return odd_r[c-1] + (10 * (r-4))
 
-print(strange_grid(16, 3))
-print(strange_grid(4, 2))
 
 def strangeGrid(r, c):
     return 10*((r-1)//2)+(r-1)%2+2*(c-1)
+
+
+
+print(strangeGrid(6, 3))
+print(strangeGrid(5, 2))
