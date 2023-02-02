@@ -9,7 +9,7 @@ class Solution:
         if rowIndex == 2:
             return [1, 2, 1]
         
-        for i in range(3, rowIndex):
+        for _ in range(3, rowIndex):
             temp = [1]
             for j in range(1, len(arr)):
                 temp.append(arr[j-1] + arr[j])
