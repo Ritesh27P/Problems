@@ -6,6 +6,6 @@ class Solution:
             value += 1
             if value not in arr:
                 pointer += 1
-            
+             
         
         return value
