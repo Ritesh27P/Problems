@@ -1,5 +1,5 @@
 class Solution:
-    def findKthPositive(self, arr: List[int], k: int) -> int:
+    def findKthPositive(self, arr, k: int) -> int:
         pointer = 0
         value = 0
         while pointer < k:
