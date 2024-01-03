@@ -6,6 +6,5 @@ class Solution:
         for i in char_set:
             if all_chars.count(i) % len(words) != 0:
                 return False
-            ``
         return True
     
